@@ -3,7 +3,17 @@
     <div class="container mx-auto px-4 py-12">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
-          <h3 class="text-xl font-bold mb-4 font-heading">OFALD</h3>
+          <NuxtLink
+            to="/"
+            class="inline-block mb-4 focus:outline-none focus:ring-3 focus:ring-accent"
+            aria-label="OFALD Home"
+          >
+            <img
+              src="/images/logo-footer.png"
+              alt="Olubukola Foundation for Autism and Learning Disability logo - four interlocking puzzle pieces"
+              class="h-16 w-auto"
+            />
+          </NuxtLink>
           <p class="text-gray-300 font-body text-base">
             Olubukola Foundation for Autism and Learning Disability - Empowering
             lives and creating an inclusive society in Nigeria.

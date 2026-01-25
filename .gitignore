@@ -35,3 +35,7 @@ migration-guide/crawled-website/
 
 # Scripts (keep scripts folder, ignore build artifacts)
 scripts/*.js.map
+
+# Documentation (keep all docs)
+!START_HERE.md
+!AGENT_SESSION_PROMPT.md
