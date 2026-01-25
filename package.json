@@ -13,7 +13,9 @@
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "typecheck": "nuxt typecheck"
+    "typecheck": "nuxt typecheck",
+    "check": "pnpm lint && pnpm typecheck && pnpm format:check",
+    "check:fix": "pnpm lint:fix && pnpm format"
   },
   "dependencies": {
     "@nuxt/content": "^2.12.2",

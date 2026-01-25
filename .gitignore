@@ -18,6 +18,9 @@ logs
 .fleet
 .idea
 
+# Migration guide (contains crawled website HTML)
+migration-guide/crawled-website/
+
 # Local env files
 .env
 .env.*
@@ -25,3 +28,10 @@ logs
 
 # TypeScript
 *.tsbuildinfo
+
+# Cursor IDE (keep .cursorrules, ignore other cursor files)
+.cursor/
+!.cursorrules
+
+# Scripts (keep scripts folder, ignore build artifacts)
+scripts/*.js.map
