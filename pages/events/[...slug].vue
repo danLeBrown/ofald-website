@@ -70,7 +70,7 @@ const { data: event } = await useAsyncData(`event-${route.params.slug}`, () =>
   queryContent('/events').where({ _path: `/events/${route.params.slug}` }).findOne()
 )
 
-const formatDate = (dateString: string) => {
+const formatDate = (dateString: string | undefined) => {
   if (!dateString) return ''
   const date = new Date(dateString)
   return date.toLocaleDateString('en-US', {

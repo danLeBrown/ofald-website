@@ -15,8 +15,8 @@
         <!-- Events from Nuxt Content -->
         <section class="mb-12">
           <h2 class="text-3xl font-bold mb-6">Upcoming Events</h2>
-          <div v-if="events.length > 0" class="space-y-6">
-            <UiCard v-for="event in events" :key="event._path" class="hover:shadow-lg transition-shadow">
+          <div v-if="eventsList.length > 0" class="space-y-6">
+            <UiCard v-for="event in eventsList" :key="event._path" class="hover:shadow-lg transition-shadow">
               <div class="flex flex-col md:flex-row gap-4">
                 <div v-if="event.image" class="md:w-48 flex-shrink-0">
                   <img
@@ -112,7 +112,9 @@ const { data: events } = await useAsyncData('events', () =>
   queryContent('/events').where({ _partial: false }).sort({ date: 1 }).find()
 )
 
-const formatDate = (dateString: string) => {
+const eventsList = computed(() => events.value || [])
+
+const formatDate = (dateString: string | undefined) => {
   if (!dateString) return ''
   const date = new Date(dateString)
   return date.toLocaleDateString('en-US', {

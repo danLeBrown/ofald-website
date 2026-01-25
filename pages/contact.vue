@@ -34,7 +34,8 @@
               <div>
                 <h3 class="text-lg font-semibold mb-2">Address</h3>
                 <p class="text-gray-700">
-                  Lagos, Ibadan, Osogbo, Abuja, Nigeria
+                  Lagos, Ibadan, Osogbo, Abuja, Nigeria<br />
+                  <span class="text-sm text-gray-600">86 3rd Ave, Abuja, Federal Capital Territory</span>
                 </p>
               </div>
 

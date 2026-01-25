@@ -25,6 +25,3 @@ logs
 
 # TypeScript
 *.tsbuildinfo
-
-# Crawled website
-crawled-website/

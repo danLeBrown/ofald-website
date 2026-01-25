@@ -159,11 +159,15 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <UiCard>
             <h3 class="text-xl font-semibold mb-3">OFALD Health Outreach</h3>
-            <p class="text-gray-700">
+            <p class="text-gray-700 mb-3">
               OFALD in partnership with doctors, speech and language therapists, psychologists, and
               physiotherapists from all around Nigeria and the rest of the world, offers free
               consultations and bi-annual health checks for people with autism and learning
               disabilities.
+            </p>
+            <p class="text-gray-700">
+              We also have free and highly subsidized packages that cater to the mental health needs
+              of parents and immediate families of our service users.
             </p>
           </UiCard>
 
