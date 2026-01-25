@@ -121,9 +121,7 @@ const formatDate = (dateString: string) => {
     day: 'numeric',
   })
 }
-</script>
 
-<script setup lang="ts">
 useSeoMeta({
   title: 'Upcoming Events at OFALD - OFALD',
   description:

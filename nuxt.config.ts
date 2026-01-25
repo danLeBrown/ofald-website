@@ -17,11 +17,22 @@ export default defineNuxtConfig({
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { name: 'description', content: 'Supporting individuals with autism and learning disabilities in Nigeria' }
+        { name: 'description', content: 'Supporting individuals with autism and learning disabilities in Nigeria. Join us in creating an inclusive society.' },
+        { name: 'keywords', content: 'autism, learning disabilities, Nigeria, OFALD, special education, inclusive society' },
+        { property: 'og:site_name', content: 'OFALD' },
+        { property: 'og:type', content: 'website' },
+        { name: 'twitter:card', content: 'summary_large_image' }
       ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
       ]
+    }
+  },
+
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+      routes: ['/sitemap.xml']
     }
   },
 

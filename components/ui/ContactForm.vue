@@ -56,14 +56,19 @@
       </label>
     </div>
     
-    <div v-if="submitStatus" :class="[
-      'p-4 rounded-lg',
-      submitStatus === 'success' ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'
-    ]">
-      {{ submitStatus === 'success' ? 'Message sent successfully!' : 'Failed to send message. Please try again.' }}
+    <div v-if="submitStatus === 'success'" class="p-4 bg-green-50 border border-green-200 rounded-lg">
+      <p class="text-green-800">Message was successfully sent!</p>
     </div>
-    
-    <Button type="submit" :disabled="isSubmitting" variant="primary">
+
+    <div v-if="submitStatus === 'error'" class="p-4 bg-red-50 border border-red-200 rounded-lg">
+      <p class="text-red-800">Message could not be sent. Please try again later.</p>
+    </div>
+
+    <div class="text-sm text-gray-500">
+      <span class="text-red-500">*</span> Please fill in all the required fields.
+    </div>
+
+    <Button type="submit" :disabled="isSubmitting">
       {{ isSubmitting ? 'Sending...' : 'Send' }}
     </Button>
   </form>
@@ -77,26 +82,34 @@ const form = reactive({
   consent: false,
 })
 
+const submitStatus = ref<'idle' | 'success' | 'error'>('idle')
 const isSubmitting = ref(false)
-const submitStatus = ref<'success' | 'error' | null>(null)
 
 const handleSubmit = async () => {
   isSubmitting.value = true
-  submitStatus.value = null
-  
-  // TODO: Implement actual form submission
-  // For now, simulate API call
-  await new Promise(resolve => setTimeout(resolve, 1000))
-  
-  submitStatus.value = 'success'
-  isSubmitting.value = false
-  
-  // Reset form after success
-  if (submitStatus.value === 'success') {
+  submitStatus.value = 'idle'
+
+  try {
+    // TODO: Replace with actual API endpoint when backend is ready
+    // For now, simulate form submission
+    await new Promise((resolve) => setTimeout(resolve, 1000))
+
+    // In production, this would be:
+    // const response = await $fetch('/api/contact', {
+    //   method: 'POST',
+    //   body: form
+    // })
+
+    submitStatus.value = 'success'
     form.name = ''
     form.email = ''
     form.message = ''
     form.consent = false
+  } catch (error) {
+    submitStatus.value = 'error'
+    console.error('Error submitting form:', error)
+  } finally {
+    isSubmitting.value = false
   }
 }
 </script>
