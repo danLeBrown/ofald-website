@@ -2,7 +2,7 @@
   <div class="py-12">
     <div class="container mx-auto px-4">
       <div class="max-w-4xl mx-auto">
-        <h1 class="text-4xl font-bold mb-8">About Olubukola Foundation</h1>
+        <h1 class="text-4xl font-bold mb-8 text-accent">About Olubukola Foundation</h1>
 
         <div class="prose prose-lg max-w-none mb-8">
           <p class="text-lg text-gray-700 mb-6">
@@ -23,7 +23,7 @@
         </div>
 
         <section class="mb-12">
-          <h2 class="text-3xl font-bold mb-6">Our Values</h2>
+          <h2 class="text-3xl font-bold mb-6 text-accent">Our Values</h2>
           <p class="text-lg text-gray-700 mb-4">
             We value kindness, a person-centred approach, and bravery: we believe that change is
             attainable. We are Nigerians; we are friendly, passionate, and proud people, and we
@@ -32,7 +32,7 @@
         </section>
 
         <section class="mb-12">
-          <h2 class="text-3xl font-bold mb-6">Our Mission</h2>
+          <h2 class="text-3xl font-bold mb-6 text-accent">Our Mission</h2>
           <p class="text-lg text-gray-700">
             The Olubukola Foundation for Autism and Learning Disability (OFALD) is devoted to
             supporting young individuals with autism and learning disabilities to shine within a
@@ -41,7 +41,7 @@
         </section>
 
         <section class="mb-12">
-          <h2 class="text-3xl font-bold mb-6">Operating Hours</h2>
+          <h2 class="text-3xl font-bold mb-6 text-accent">Operating Hours</h2>
           <div class="bg-gray-50 p-6 rounded-lg">
             <ul class="space-y-2 text-gray-700">
               <li><strong>Mon – Fri:</strong> 09:00 – 18:00</li>
@@ -53,7 +53,7 @@
 
         <div class="text-center mt-12">
           <NuxtLink to="/contact">
-            <Button>Get In Touch</Button>
+            <UiButton>Get In Touch</UiButton>
           </NuxtLink>
         </div>
       </div>

@@ -12,16 +12,21 @@ export default {
     extend: {
       colors: {
         primary: {
-          50: '#f0f9ff',
-          100: '#e0f2fe',
-          200: '#bae6fd',
-          300: '#7dd3fc',
-          400: '#38bdf8',
-          500: '#0ea5e9',
-          600: '#0284c7',
-          700: '#0369a1',
-          800: '#075985',
-          900: '#0c4a6e',
+          50: '#e8f5ed',
+          100: '#c3e5d1',
+          200: '#9dd4b4',
+          300: '#77c397',
+          400: '#51b27a',
+          500: '#2ba15d',
+          600: '#22804a',
+          700: '#1a6038',
+          800: '#114027', // Main primary color
+          900: '#0a2016',
+          DEFAULT: '#104927', // Main primary color
+        },
+        accent: {
+          DEFAULT: '#00bf62', // Logo green for headers and accents
+          light: '#57d29d', // Lighter variant if needed
         },
       },
     },

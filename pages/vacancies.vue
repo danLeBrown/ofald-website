@@ -2,7 +2,7 @@
   <div class="py-12">
     <div class="container mx-auto px-4">
       <div class="max-w-4xl mx-auto">
-        <h1 class="text-4xl font-bold mb-8">Vacancies at OFALD</h1>
+        <h1 class="text-4xl font-bold mb-8 text-accent">Vacancies at OFALD</h1>
 
         <div class="prose prose-lg max-w-none mb-8">
           <p class="text-lg text-gray-700 mb-6">
@@ -13,7 +13,7 @@
         </div>
 
         <section class="mb-12">
-          <h2 class="text-3xl font-bold mb-6">Current Opportunities</h2>
+          <h2 class="text-3xl font-bold mb-6 text-accent">Current Opportunities</h2>
           <div class="space-y-6">
             <UiCard>
               <h3 class="text-2xl font-semibold mb-3">Volunteer Positions</h3>
@@ -58,7 +58,7 @@
         </section>
 
         <section class="mb-12">
-          <h2 class="text-3xl font-bold mb-6">Why Work at OFALD?</h2>
+          <h2 class="text-3xl font-bold mb-6 text-accent">Why Work at OFALD?</h2>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <UiCard>
               <h3 class="text-xl font-semibold mb-3">Inclusive Environment</h3>
@@ -90,8 +90,8 @@
           </div>
         </section>
 
-        <section class="mb-12 bg-primary-50 p-8 rounded-lg">
-          <h2 class="text-3xl font-bold mb-6">How to Apply</h2>
+        <section class="mb-12 bg-primary-50 p-8 rounded-lg border-l-4 border-accent">
+          <h2 class="text-3xl font-bold mb-6 text-accent">How to Apply</h2>
           <p class="text-lg text-gray-700 mb-4">
             If you're interested in joining our team, please contact us. We welcome applications
             from people with and without disabilities. We believe that diversity makes us stronger
@@ -99,13 +99,13 @@
           </p>
           <div class="text-center mt-6">
             <NuxtLink to="/contact">
-              <Button>Contact Us About Opportunities</Button>
+              <UiButton>Contact Us About Opportunities</UiButton>
             </NuxtLink>
           </div>
         </section>
 
         <section class="mb-12">
-          <h2 class="text-3xl font-bold mb-6">Training Opportunities</h2>
+          <h2 class="text-3xl font-bold mb-6 text-accent">Training Opportunities</h2>
           <p class="text-lg text-gray-700 mb-4">
             We also offer trainings and support to individuals who are interested in the learning
             disability and autism support career pathways. With our globally certified online and

@@ -2,7 +2,7 @@
   <div class="py-12">
     <div class="container mx-auto px-4">
       <div class="max-w-4xl mx-auto">
-        <h1 class="text-4xl font-bold mb-8">Understanding Autism and Learning Disability</h1>
+        <h1 class="text-4xl font-bold mb-8 text-accent">Understanding Autism and Learning Disability</h1>
 
         <div class="prose prose-lg max-w-none mb-8">
           <p class="text-lg text-gray-700 mb-6">
@@ -13,7 +13,7 @@
         </div>
 
         <section class="mb-12">
-          <h2 class="text-3xl font-bold mb-6">What is a Learning Disability?</h2>
+          <h2 class="text-3xl font-bold mb-6 text-accent">What is a Learning Disability?</h2>
           <p class="text-lg text-gray-700 mb-4">
             A learning disability is a reduced intellectual ability and difficulty with everyday
             activities. It affects someone for their whole life and can impact how they learn,
@@ -31,7 +31,7 @@
         </section>
 
         <section class="mb-12">
-          <h2 class="text-3xl font-bold mb-6">What is Autism?</h2>
+          <h2 class="text-3xl font-bold mb-6 text-accent">What is Autism?</h2>
           <p class="text-lg text-gray-700 mb-4">
             Autism, or Autism Spectrum Disorder (ASD), is a developmental disorder that affects
             communication, social interaction, and behavior. It is called a "spectrum" disorder
@@ -47,7 +47,7 @@
         </section>
 
         <section class="mb-12">
-          <h2 class="text-3xl font-bold mb-6">Types of Learning Disabilities</h2>
+          <h2 class="text-3xl font-bold mb-6 text-accent">Types of Learning Disabilities</h2>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <UiCard>
               <h3 class="text-xl font-semibold mb-3">Down Syndrome</h3>
@@ -80,8 +80,8 @@
           </div>
         </section>
 
-        <section class="mb-12 bg-primary-50 p-8 rounded-lg">
-          <h2 class="text-3xl font-bold mb-6">How OFALD Helps</h2>
+        <section class="mb-12 bg-primary-50 p-8 rounded-lg border-l-4 border-accent">
+          <h2 class="text-3xl font-bold mb-6 text-accent">How OFALD Helps</h2>
           <p class="text-lg text-gray-700 mb-4">
             At OFALD, we provide comprehensive support for individuals with autism and learning
             disabilities:
@@ -97,7 +97,7 @@
 
         <div class="text-center mt-12">
           <NuxtLink to="/contact">
-            <Button>Contact Us for More Information</Button>
+            <UiButton>Contact Us for More Information</UiButton>
           </NuxtLink>
         </div>
       </div>

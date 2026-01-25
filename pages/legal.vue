@@ -2,7 +2,7 @@
   <div class="py-12">
     <div class="container mx-auto px-4">
       <div class="max-w-4xl mx-auto">
-        <h1 class="text-4xl font-bold mb-8">Legal Notice</h1>
+        <h1 class="text-4xl font-bold mb-8 text-accent">Legal Notice</h1>
 
         <div class="prose prose-lg max-w-none">
           <section class="mb-8">
@@ -15,7 +15,7 @@
               disabilities in Nigeria.
             </p>
             <p class="text-gray-700">
-              Contact: <a href="mailto:info@ofald.net" class="text-primary-600">info@ofald.net</a>
+              Contact: <a href="mailto:info@ofald.net" class="text-accent">info@ofald.net</a>
             </p>
           </section>
 
@@ -69,8 +69,8 @@
               For any legal inquiries, please contact us at:
             </p>
             <p class="text-gray-700 mt-2">
-              Email: <a href="mailto:info@ofald.net" class="text-primary-600">info@ofald.net</a><br />
-              Phone: <a href="tel:+2347031149191" class="text-primary-600">+2347031149191</a>
+              Email: <a href="mailto:info@ofald.net" class="text-accent">info@ofald.net</a><br />
+              Phone: <a href="tel:+2347031149191" class="text-accent">+2347031149191</a>
             </p>
           </section>
 

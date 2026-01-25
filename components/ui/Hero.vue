@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-gradient-to-r from-primary-600 to-primary-800 text-white py-20">
+  <section class="bg-gradient-to-r from-primary-800 to-primary-900 text-white py-20">
     <div class="container mx-auto px-4">
       <div class="max-w-3xl">
         <h1 class="text-4xl md:text-5xl font-bold mb-6">
@@ -10,10 +10,10 @@
         </p>
         <div class="flex flex-col sm:flex-row gap-4">
           <NuxtLink to="/contact">
-            <Button>Get Involved</Button>
+            <UiButton>Get Involved</UiButton>
           </NuxtLink>
           <NuxtLink to="/about">
-            <Button variant="secondary">Learn More</Button>
+            <UiButton variant="secondary">Learn More</UiButton>
           </NuxtLink>
         </div>
       </div>

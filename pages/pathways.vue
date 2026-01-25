@@ -2,7 +2,7 @@
   <div class="py-12">
     <div class="container mx-auto px-4">
       <div class="max-w-4xl mx-auto">
-        <h1 class="text-4xl font-bold mb-8">OFALD Pathways</h1>
+        <h1 class="text-4xl font-bold mb-8 text-accent">OFALD Pathways</h1>
 
         <div class="prose prose-lg max-w-none mb-8">
           <p class="text-lg text-gray-700 mb-6">
@@ -12,7 +12,7 @@
         </div>
 
         <section class="mb-12">
-          <h2 class="text-3xl font-bold mb-6">Our Pathway Programs</h2>
+          <h2 class="text-3xl font-bold mb-6 text-accent">Our Pathway Programs</h2>
 
           <div class="space-y-8">
             <UiCard>
@@ -74,7 +74,7 @@
         </section>
 
         <section class="mb-12 bg-gray-50 p-8 rounded-lg">
-          <h2 class="text-3xl font-bold mb-6">Who Can Access Our Pathways?</h2>
+          <h2 class="text-3xl font-bold mb-6 text-accent">Who Can Access Our Pathways?</h2>
           <p class="text-lg text-gray-700 mb-4">
             Our pathways are designed for:
           </p>
@@ -87,7 +87,7 @@
         </section>
 
         <section class="mb-12">
-          <h2 class="text-3xl font-bold mb-6">How to Get Started</h2>
+          <h2 class="text-3xl font-bold mb-6 text-accent">How to Get Started</h2>
           <div class="space-y-4 text-gray-700">
             <p class="text-lg">
               If you or someone you know could benefit from our pathways, we encourage you to reach
@@ -103,7 +103,7 @@
 
         <div class="text-center mt-12">
           <NuxtLink to="/contact">
-            <Button>Get Started with OFALD Pathways</Button>
+            <UiButton>Get Started with OFALD Pathways</UiButton>
           </NuxtLink>
         </div>
       </div>

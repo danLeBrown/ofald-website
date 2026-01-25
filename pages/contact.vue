@@ -2,7 +2,7 @@
   <div class="py-12">
     <div class="container mx-auto px-4">
       <div class="max-w-4xl mx-auto">
-        <h1 class="text-4xl font-bold mb-8">Contact Us</h1>
+        <h1 class="text-4xl font-bold mb-8 text-accent">Contact Us</h1>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
           <!-- Contact Information -->
@@ -16,7 +16,7 @@
             <div class="space-y-6">
               <div>
                 <h3 class="text-lg font-semibold mb-2">Telephone</h3>
-                <a href="tel:+2347031149191" class="text-primary-600 hover:text-primary-700">
+                <a href="tel:+2347031149191" class="text-accent hover:text-accent-light">
                   +2347031149191
                 </a>
               </div>
@@ -25,7 +25,7 @@
                 <h3 class="text-lg font-semibold mb-2">Email</h3>
                 <a
                   href="mailto:info@ofald.net"
-                  class="text-primary-600 hover:text-primary-700"
+                  class="text-accent hover:text-accent-light"
                 >
                   info@ofald.net
                 </a>
@@ -70,7 +70,7 @@
             </li>
             <li>
               Consider volunteering (please visit our
-              <NuxtLink to="/vacancies" class="text-primary-600 hover:text-primary-700">
+              <NuxtLink to="/vacancies" class="text-accent hover:text-accent-light">
                 Vacancy page
               </NuxtLink>
               for available volunteering roles).

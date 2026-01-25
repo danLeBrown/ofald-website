@@ -4,7 +4,7 @@
       <div class="max-w-4xl mx-auto">
         <NuxtLink
           to="/events"
-          class="text-primary-600 hover:text-primary-700 mb-6 inline-block"
+          class="text-accent hover:text-accent-light mb-6 inline-block"
         >
           ← Back to Events
         </NuxtLink>
@@ -37,17 +37,17 @@
 
           <ContentRenderer :value="event" />
 
-          <div class="mt-12 bg-primary-50 p-8 rounded-lg">
+          <div class="mt-12 bg-primary-50 p-8 rounded-lg border-l-4 border-accent">
             <h2 class="text-2xl font-semibold mb-4">Interested in This Event?</h2>
             <p class="text-gray-700 mb-4">
               Contact us to register or get more information about this event.
             </p>
             <div class="flex flex-col sm:flex-row gap-4">
               <NuxtLink to="/contact">
-                <Button>Contact Us</Button>
+                <UiButton>Contact Us</UiButton>
               </NuxtLink>
               <a href="tel:+2347031149191">
-                <Button variant="secondary">Call Us</Button>
+                <UiButton variant="secondary">Call Us</UiButton>
               </a>
             </div>
           </div>
@@ -55,7 +55,7 @@
 
         <div v-else class="text-center py-12">
           <p class="text-gray-600 text-lg">Event not found.</p>
-          <NuxtLink to="/events" class="text-primary-600 hover:text-primary-700 mt-4 inline-block">
+          <NuxtLink to="/events" class="text-accent hover:text-accent-light mt-4 inline-block">
             View All Events
           </NuxtLink>
         </div>

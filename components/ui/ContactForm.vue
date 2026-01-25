@@ -68,9 +68,9 @@
       <span class="text-red-500">*</span> Please fill in all the required fields.
     </div>
 
-    <Button type="submit" :disabled="isSubmitting">
+    <UiButton type="submit" :disabled="isSubmitting">
       {{ isSubmitting ? 'Sending...' : 'Send' }}
-    </Button>
+    </UiButton>
   </form>
 </template>
 

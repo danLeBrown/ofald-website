@@ -2,7 +2,7 @@
   <header class="bg-white shadow-md sticky top-0 z-50">
     <nav class="container mx-auto px-4 py-4">
       <div class="flex items-center justify-between">
-        <NuxtLink to="/" class="text-2xl font-bold text-primary-700">
+        <NuxtLink to="/" class="text-2xl font-bold text-accent">
           OFALD
         </NuxtLink>
         
@@ -43,7 +43,7 @@
           <li v-for="link in navLinks" :key="link.path">
             <NuxtLink
               :to="link.path"
-              class="block py-2 px-4 text-gray-700 hover:text-primary-600 hover:bg-gray-50 rounded-md transition-colors"
+              class="block py-2 px-4 text-gray-700 hover:text-accent hover:bg-gray-50 rounded-md transition-colors"
               @click="closeMenu"
             >
               {{ link.label }}

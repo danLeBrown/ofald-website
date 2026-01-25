@@ -8,7 +8,7 @@
     <!-- Statistics Section -->
     <section class="py-16 bg-gray-50">
       <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center mb-12">Our Impact</h2>
+        <h2 class="text-3xl font-bold text-center mb-12 text-accent">Our Impact</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <UiStatCard value="20" label="Proposed No. of people to be empowered in 2026" />
           <UiStatCard value="200" label="Trainings to be delivered" />
@@ -21,7 +21,7 @@
     <section class="py-16">
       <div class="container mx-auto px-4">
         <div class="max-w-4xl mx-auto">
-          <h2 class="text-3xl font-bold mb-6 text-center">About Olubukola Foundation</h2>
+          <h2 class="text-3xl font-bold mb-6 text-center text-accent">About Olubukola Foundation</h2>
           <p class="text-lg text-gray-700 mb-6">
             Olubukola Foundation for Autism and Learning Disabilities (OFALD) is a dedicated
             non-profit organization committed to supporting individuals with autism and learning
@@ -39,7 +39,7 @@
           </p>
           <div class="text-center">
             <NuxtLink to="/about">
-              <Button>Learn More About Us</Button>
+              <UiButton>Learn More About Us</UiButton>
             </NuxtLink>
           </div>
         </div>
@@ -49,7 +49,7 @@
     <!-- Services Section -->
     <section class="py-16 bg-gray-50">
       <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center mb-12">Who do we work with?</h2>
+        <h2 class="text-3xl font-bold text-center mb-12 text-accent">Who do we work with?</h2>
         <div class="max-w-4xl mx-auto mb-8">
           <p class="text-lg text-gray-700 mb-6">
             We offer services to young people with Autism and Learning Disability. Some of these
@@ -90,7 +90,7 @@
     <!-- Key Initiatives Section -->
     <section class="py-16">
       <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center mb-12">Our Key Initiatives</h2>
+        <h2 class="text-3xl font-bold text-center mb-12 text-accent">Our Key Initiatives</h2>
         <p class="text-center text-gray-700 mb-12 max-w-3xl mx-auto">
           Discover with us core initiatives and programs designed to empower young individuals
           with autism and learning disabilities. Each of these highlights showcase our commitment
@@ -199,7 +199,7 @@
       <div class="container mx-auto px-4">
         <div class="max-w-4xl mx-auto">
           <UiCard>
-            <h2 class="text-3xl font-bold mb-6">OFALD RESEARCH INSTITUTE</h2>
+            <h2 class="text-3xl font-bold mb-6 text-accent">OFALD RESEARCH INSTITUTE</h2>
             <p class="text-gray-700 mb-4">
               At OFALD, we are partnering with research institutions at home and abroad to look into
               ways that people with learning disabilities and autism can be supported to live better
@@ -217,9 +217,9 @@
     </section>
 
     <!-- Call to Action -->
-    <section class="py-16 bg-primary-600 text-white">
+    <section class="py-16 bg-primary text-white">
       <div class="container mx-auto px-4 text-center">
-        <h2 class="text-3xl font-bold mb-6">Get Involved</h2>
+        <h2 class="text-3xl font-bold mb-6 text-white">Get Involved</h2>
         <p class="text-xl mb-8 max-w-2xl mx-auto">
           There are lots of ways you can get involved at OFALD. Do you know anyone with autism and
           learning disabilities who could benefit from our programs and pathways? Please recommend
@@ -228,10 +228,10 @@
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <NuxtLink to="/contact">
-            <Button variant="secondary">Contact Us</Button>
+            <UiButton variant="secondary">Contact Us</UiButton>
           </NuxtLink>
           <NuxtLink to="/vacancies">
-            <Button variant="secondary">View Vacancies</Button>
+            <UiButton variant="secondary">View Vacancies</UiButton>
           </NuxtLink>
         </div>
       </div>

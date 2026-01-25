@@ -2,7 +2,7 @@
   <div class="py-12">
     <div class="container mx-auto px-4">
       <div class="max-w-4xl mx-auto">
-        <h1 class="text-4xl font-bold mb-8">Upcoming Events at OFALD</h1>
+        <h1 class="text-4xl font-bold mb-8 text-accent">Upcoming Events at OFALD</h1>
 
         <div class="prose prose-lg max-w-none mb-8">
           <p class="text-lg text-gray-700 mb-6">
@@ -14,7 +14,7 @@
 
         <!-- Events from Nuxt Content -->
         <section class="mb-12">
-          <h2 class="text-3xl font-bold mb-6">Upcoming Events</h2>
+          <h2 class="text-3xl font-bold mb-6 text-accent">Upcoming Events</h2>
           <div v-if="eventsList.length > 0" class="space-y-6">
             <UiCard v-for="event in eventsList" :key="event._path" class="hover:shadow-lg transition-shadow">
               <div class="flex flex-col md:flex-row gap-4">
@@ -42,7 +42,7 @@
                   <NuxtLink
                     v-if="event._path"
                     :to="event._path"
-                    class="text-primary-600 hover:text-primary-700 font-semibold"
+                    class="text-accent hover:text-accent-light font-semibold"
                   >
                     Learn More →
                   </NuxtLink>
@@ -57,7 +57,7 @@
         </section>
 
         <section class="mb-12">
-          <h2 class="text-3xl font-bold mb-6">Event Categories</h2>
+          <h2 class="text-3xl font-bold mb-6 text-accent">Event Categories</h2>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <UiCard>
               <h3 class="text-xl font-semibold mb-3">Awareness Campaigns</h3>
@@ -90,15 +90,15 @@
           </div>
         </section>
 
-        <section class="mb-12 bg-primary-50 p-8 rounded-lg">
-          <h2 class="text-3xl font-bold mb-6">Stay Connected</h2>
+        <section class="mb-12 bg-primary-50 p-8 rounded-lg border-l-4 border-accent">
+          <h2 class="text-3xl font-bold mb-6 text-accent">Stay Connected</h2>
           <p class="text-lg text-gray-700 mb-4">
             Want to be notified about upcoming events? Contact us to be added to our mailing list or
             follow us for updates.
           </p>
           <div class="text-center mt-6">
             <NuxtLink to="/contact">
-              <Button>Get Event Updates</Button>
+              <UiButton>Get Event Updates</UiButton>
             </NuxtLink>
           </div>
         </section>

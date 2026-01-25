@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
-  
+
   modules: [
     '@nuxtjs/tailwindcss',
     '@pinia/nuxt',
@@ -44,6 +44,6 @@ export default defineNuxtConfig({
 
   typescript: {
     strict: true,
-    typeCheck: false // Disabled for now due to network issues, can be enabled later
+    typeCheck: false // Disabled due to vue-tsc dependency issues
   }
 })
