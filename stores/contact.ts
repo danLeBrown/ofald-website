@@ -13,33 +13,33 @@ export const useContactStore = defineStore('contact', {
       name: '',
       email: '',
       message: '',
-      consent: false,
+      consent: false
     } as ContactFormData,
     isSubmitting: false,
-    submitStatus: null as 'success' | 'error' | null,
+    submitStatus: null as 'success' | 'error' | null
   }),
 
   actions: {
-    setFormData(data: Partial<ContactFormData>) {
+    setFormData (data: Partial<ContactFormData>) {
       this.formData = { ...this.formData, ...data }
     },
 
-    resetForm() {
+    resetForm () {
       this.formData = {
         name: '',
         email: '',
         message: '',
-        consent: false,
+        consent: false
       }
       this.submitStatus = null
     },
 
-    setSubmitting(status: boolean) {
+    setSubmitting (status: boolean) {
       this.isSubmitting = status
     },
 
-    setSubmitStatus(status: 'success' | 'error' | null) {
+    setSubmitStatus (status: 'success' | 'error' | null) {
       this.submitStatus = status
-    },
-  },
+    }
+  }
 })

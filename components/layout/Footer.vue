@@ -3,15 +3,15 @@
     <div class="container mx-auto px-4 py-12">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
-          <h3 class="text-xl font-bold mb-4">OFALD</h3>
-          <p class="text-gray-400">
+          <h3 class="text-xl font-bold mb-4 font-heading">OFALD</h3>
+          <p class="text-gray-300 font-body text-base">
             Olubukola Foundation for Autism and Learning Disability - Empowering
             lives and creating an inclusive society in Nigeria.
           </p>
         </div>
 
         <div>
-          <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+          <h4 class="text-lg font-semibold mb-4 font-heading">Quick Links</h4>
           <ul class="space-y-2">
             <li>
               <NuxtLink to="/about" class="text-gray-400 hover:text-white transition-colors">
@@ -37,8 +37,8 @@
         </div>
 
         <div>
-          <h4 class="text-lg font-semibold mb-4">Contact</h4>
-          <ul class="space-y-2 text-gray-400 mb-4">
+          <h4 class="text-lg font-semibold mb-4 font-heading">Contact</h4>
+          <ul class="space-y-2 text-gray-300 mb-4 font-body text-base">
             <li>Telephone: <a href="tel:+2347031149191" class="hover:text-white transition-colors">+2347031149191</a></li>
             <li>Email: <a href="mailto:info@ofald.net" class="hover:text-white transition-colors">info@ofald.net</a></li>
             <li>Lagos, Ibadan, Osogbo, Abuja, Nigeria</li>
@@ -49,7 +49,7 @@
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
-              class="text-gray-400 hover:text-white transition-colors"
+              class="text-gray-300 hover:text-white focus:outline-none focus:ring-3 focus:ring-accent"
             >
               <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                 <path
@@ -62,7 +62,7 @@
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Email"
-              class="text-gray-400 hover:text-white transition-colors"
+              class="text-gray-300 hover:text-white focus:outline-none focus:ring-3 focus:ring-accent"
             >
               <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                 <path
@@ -73,7 +73,7 @@
             <a
               href="tel:+2347031149191"
               aria-label="Phone"
-              class="text-gray-400 hover:text-white transition-colors"
+              class="text-gray-300 hover:text-white focus:outline-none focus:ring-3 focus:ring-accent"
             >
               <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                 <path
@@ -87,14 +87,14 @@
       </div>
 
       <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-        <p class="text-gray-400 text-sm">
+        <p class="text-gray-300 text-sm font-body">
           © {{ currentYear }} OFALD. All rights reserved.
         </p>
         <div class="flex space-x-4 mt-4 md:mt-0">
-          <NuxtLink to="/privacy" class="text-gray-400 hover:text-white text-sm transition-colors">
+          <NuxtLink to="/privacy" class="text-gray-300 hover:text-white text-sm font-body focus:outline-none focus:ring-3 focus:ring-accent">
             Privacy Policy
           </NuxtLink>
-          <NuxtLink to="/legal" class="text-gray-400 hover:text-white text-sm transition-colors">
+          <NuxtLink to="/legal" class="text-gray-300 hover:text-white text-sm font-body focus:outline-none focus:ring-3 focus:ring-accent">
             Legal Notice
           </NuxtLink>
         </div>

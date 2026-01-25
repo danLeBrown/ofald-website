@@ -1,18 +1,15 @@
 <template>
   <div class="py-12">
     <div class="container mx-auto px-4">
-      <div class="max-w-4xl mx-auto">
-        <NuxtLink
-          to="/events"
-          class="text-accent hover:text-accent-light mb-6 inline-block"
-        >
-          ← Back to Events
-        </NuxtLink>
+      <div class="max-w-readable mx-auto">
+        <UiBreadcrumbs />
 
-        <article v-if="event" class="prose prose-lg max-w-none">
-          <h1 class="text-4xl font-bold mb-4">{{ event.title }}</h1>
+        <article v-if="event" class="max-w-none">
+          <h1 class="text-4xl font-bold mb-4 text-accent font-heading">
+            {{ event.title }}
+          </h1>
 
-          <div class="flex flex-wrap gap-4 mb-8 text-gray-600">
+          <div class="flex flex-wrap gap-4 mb-8 text-gray-900 font-body text-base">
             <span v-if="event.date">
               <strong>Date:</strong> {{ formatDate(event.date) }}
             </span>
@@ -28,18 +25,22 @@
           </div>
 
           <div v-if="event.image" class="mb-8">
-            <img :src="event.image" :alt="event.title" class="w-full rounded-lg" />
+            <img :src="event.image" :alt="event.title || 'Event image'" class="w-full rounded-lg">
           </div>
 
           <div v-if="event.description" class="mb-8">
-            <p class="text-xl text-gray-700">{{ event.description }}</p>
+            <p class="text-lg text-gray-900 font-body max-w-readable">
+              {{ event.description }}
+            </p>
           </div>
 
           <ContentRenderer :value="event" />
 
           <div class="mt-12 bg-primary-50 p-8 rounded-lg border-l-4 border-accent">
-            <h2 class="text-2xl font-semibold mb-4">Interested in This Event?</h2>
-            <p class="text-gray-700 mb-4">
+            <h2 class="text-2xl font-semibold mb-4 font-heading">
+              Interested in This Event?
+            </h2>
+            <p class="text-gray-900 mb-4 font-body text-base">
               Contact us to register or get more information about this event.
             </p>
             <div class="flex flex-col sm:flex-row gap-4">
@@ -54,8 +55,10 @@
         </article>
 
         <div v-else class="text-center py-12">
-          <p class="text-gray-600 text-lg">Event not found.</p>
-          <NuxtLink to="/events" class="text-accent hover:text-accent-light mt-4 inline-block">
+          <p class="text-gray-900 text-lg font-body">
+            Event not found.
+          </p>
+          <NuxtLink to="/events" class="text-accent hover:text-accent-light mt-4 inline-block font-body text-base focus:outline-none focus:ring-3 focus:ring-accent">
             View All Events
           </NuxtLink>
         </div>
@@ -71,12 +74,12 @@ const { data: event } = await useAsyncData(`event-${route.params.slug}`, () =>
 )
 
 const formatDate = (dateString: string | undefined) => {
-  if (!dateString) return ''
+  if (!dateString) { return '' }
   const date = new Date(dateString)
   return date.toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'long',
-    day: 'numeric',
+    day: 'numeric'
   })
 }
 
@@ -85,6 +88,6 @@ useSeoMeta({
   description: event.value?.description || 'OFALD Event',
   ogTitle: event.value?.title || 'OFALD Event',
   ogDescription: event.value?.description || 'OFALD Event',
-  ogImage: event.value?.image || '',
+  ogImage: event.value?.image || ''
 })
 </script>

@@ -2,14 +2,15 @@
   <header class="bg-white shadow-md sticky top-0 z-50">
     <nav class="container mx-auto px-4 py-4">
       <div class="flex items-center justify-between">
-        <NuxtLink to="/" class="text-2xl font-bold text-accent">
+        <NuxtLink to="/" class="text-2xl font-bold text-accent font-heading focus:outline-none focus:ring-3 focus:ring-accent">
           OFALD
         </NuxtLink>
         
         <button
           @click="toggleMenu"
-          class="md:hidden p-2 rounded-md hover:bg-gray-100"
-          aria-label="Toggle menu"
+          class="md:hidden p-3 rounded-md hover:bg-gray-100 focus:outline-none focus:ring-3 focus:ring-accent min-h-[44px] min-w-[44px]"
+          :aria-label="isMenuOpen ? 'Close menu' : 'Open menu'"
+          :aria-expanded="isMenuOpen"
         >
           <svg
             class="w-6 h-6"
@@ -43,7 +44,7 @@
           <li v-for="link in navLinks" :key="link.path">
             <NuxtLink
               :to="link.path"
-              class="block py-2 px-4 text-gray-700 hover:text-accent hover:bg-gray-50 rounded-md transition-colors"
+              class="block py-3 px-4 text-gray-900 hover:text-accent hover:bg-gray-50 rounded-md focus:outline-none focus:ring-3 focus:ring-accent min-h-[44px] font-body text-base"
               @click="closeMenu"
             >
               {{ link.label }}

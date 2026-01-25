@@ -6,10 +6,27 @@ export default {
     './pages/**/*.vue',
     './plugins/**/*.{js,ts}',
     './app.vue',
-    './error.vue',
+    './error.vue'
   ],
   theme: {
     extend: {
+      fontFamily: {
+        heading: ['Lexend Deca', 'sans-serif'],
+        body: ['Atkinson Hyperlegible', 'sans-serif']
+      },
+      fontSize: {
+        base: ['18px', { lineHeight: '1.6', letterSpacing: '0.02em' }],
+        'heading-1': ['2.5rem', { lineHeight: '1.3', letterSpacing: '0.01em' }],
+        'heading-2': ['2rem', { lineHeight: '1.3', letterSpacing: '0.01em' }],
+        'heading-3': ['1.5rem', { lineHeight: '1.3', letterSpacing: '0.01em' }],
+        'heading-4': ['1.25rem', { lineHeight: '1.3', letterSpacing: '0.01em' }]
+      },
+      maxWidth: {
+        readable: '70ch' // 70-80 characters for optimal readability
+      },
+      spacing: {
+        section: '3rem' // Generous white space between sections
+      },
       colors: {
         primary: {
           50: '#e8f5ed',
@@ -22,14 +39,14 @@ export default {
           700: '#1a6038',
           800: '#114027', // Main primary color
           900: '#0a2016',
-          DEFAULT: '#104927', // Main primary color
+          DEFAULT: '#104927' // Main primary color
         },
         accent: {
           DEFAULT: '#00bf62', // Logo green for headers and accents
-          light: '#57d29d', // Lighter variant if needed
-        },
-      },
-    },
+          light: '#57d29d' // Lighter variant if needed
+        }
+      }
+    }
   },
-  plugins: [],
+  plugins: []
 }

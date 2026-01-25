@@ -1,10 +1,12 @@
 <template>
   <div class="min-h-screen flex flex-col">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <LayoutHeader />
-    <main class="flex-grow">
+    <main id="main-content" class="flex-grow">
       <slot />
     </main>
     <LayoutFooter />
+    <UiAccessibilityControls />
   </div>
 </template>
 

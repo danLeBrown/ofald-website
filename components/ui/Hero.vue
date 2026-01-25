@@ -2,10 +2,10 @@
   <section class="bg-gradient-to-r from-primary-800 to-primary-900 text-white py-20">
     <div class="container mx-auto px-4">
       <div class="max-w-3xl">
-        <h1 class="text-4xl md:text-5xl font-bold mb-6">
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-6">
           {{ title }}
         </h1>
-        <p class="text-xl mb-8 text-gray-100">
+        <p class="text-lg md:text-xl mb-8 text-gray-100 font-body">
           {{ description }}
         </p>
         <div class="flex flex-col sm:flex-row gap-4">

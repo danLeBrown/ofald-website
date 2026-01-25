@@ -2,13 +2,14 @@
   <button
     :type="type"
     :class="[
-      'px-6 py-3 rounded-lg font-semibold transition-colors',
+      'px-6 py-3 rounded-lg font-heading font-semibold min-h-[48px] min-w-[120px] focus:outline-none focus:ring-3 focus:ring-accent focus:ring-offset-2',
       variant === 'primary'
-        ? 'bg-primary text-white hover:bg-primary-700'
-        : 'bg-gray-200 text-gray-800 hover:bg-gray-300',
+        ? 'bg-primary text-white hover:bg-primary-700 active:bg-primary-900'
+        : 'bg-gray-200 text-gray-900 hover:bg-gray-300 active:bg-gray-400 border-2 border-gray-400',
       disabled && 'opacity-50 cursor-not-allowed',
     ]"
     :disabled="disabled"
+    :aria-disabled="disabled"
   >
     <slot />
   </button>

@@ -8,6 +8,146 @@
   }
   
   body {
-    @apply antialiased;
+    @apply antialiased font-body text-base text-gray-900;
+    font-size: 18px; /* Minimum 18px for body text */
+    line-height: 1.6;
+    letter-spacing: 0.02em;
+  }
+
+  /* Typography Scale */
+  h1 {
+    @apply font-heading text-heading-1 font-bold;
+    line-height: 1.3;
+    letter-spacing: 0.01em;
+  }
+
+  h2 {
+    @apply font-heading text-heading-2 font-semibold;
+    line-height: 1.3;
+    letter-spacing: 0.01em;
+  }
+
+  h3 {
+    @apply font-heading text-heading-3 font-semibold;
+    line-height: 1.3;
+    letter-spacing: 0.01em;
+  }
+
+  h4 {
+    @apply font-heading text-heading-4 font-semibold;
+    line-height: 1.3;
+    letter-spacing: 0.01em;
+  }
+
+  /* Ensure text is left-aligned, no justified text */
+  p {
+    @apply text-left;
+    max-width: 70ch; /* Optimal line length */
+  }
+
+  /* Links should be underlined by default */
+  a {
+    @apply underline;
+  }
+
+  /* Respect reduced motion preference */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  /* Skip to main content link */
+  .skip-link {
+    @apply sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-primary focus:text-white focus:rounded-lg focus:font-bold;
+  }
+
+  /* High contrast focus indicators */
+  *:focus-visible {
+    outline: 3px solid #00bf62;
+    outline-offset: 2px;
+  }
+
+  /* Touch-friendly interactive elements */
+  button,
+  a,
+  input,
+  select,
+  textarea {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  /* Calm Mode - Remove all animations */
+  .calm-mode *,
+  .calm-mode *::before,
+  .calm-mode *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  /* High Contrast Mode - WCAG AAA compliant */
+  .high-contrast {
+    --primary: #000000;
+    --accent: #0066cc;
+    --text: #000000;
+    --bg: #ffffff;
+  }
+
+  .high-contrast body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  .high-contrast h1,
+  .high-contrast h2,
+  .high-contrast h3,
+  .high-contrast h4 {
+    color: #000000 !important;
+  }
+
+  .high-contrast a {
+    color: #0066cc !important;
+    text-decoration: underline !important;
+    font-weight: 700 !important;
+  }
+
+  .high-contrast button {
+    border: 3px solid #000000 !important;
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  .high-contrast button:hover,
+  .high-contrast button:focus {
+    background: #000000 !important;
+    color: #ffffff !important;
+  }
+
+  .high-contrast .bg-primary {
+    background: #000000 !important;
+    color: #ffffff !important;
+  }
+
+  .high-contrast .text-accent {
+    color: #0066cc !important;
+  }
+}
+
+/* Ensure minimum contrast ratios - WCAG AAA */
+@layer utilities {
+  .text-high-contrast {
+    color: #000000;
+  }
+
+  .bg-high-contrast {
+    background: #ffffff;
   }
 }
