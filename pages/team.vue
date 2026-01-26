@@ -23,14 +23,14 @@
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <UiCard class="text-center">
               <div class="mb-4 flex justify-center">
-                <div class="w-32 h-32 rounded-full bg-gradient-to-br from-primary-100 to-accent-100 p-1 shadow-md">
+                <div class="w-32 h-32 rounded-full bg-gradient-to-br from-primary-100 to-accent-100 shadow-md overflow-hidden">
                   <img
-                    src="/images/team/adewumi-adeyemi.jpg"
+                    src="/images/team/adewunmi-adeyemi.jpg"
                     alt="Photo of Adewumi Adeyemi, Founder and Executive Director at OFALD"
-                    class="w-full h-full rounded-full object-cover"
+                    class="w-full h-full object-cover"
                     loading="lazy"
                     onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
-                  />
+                  >
                   <div
                     class="w-full h-full rounded-full bg-gradient-to-br from-primary-100 to-accent-100 items-center justify-center hidden"
                     role="img"
@@ -50,16 +50,16 @@
 
             <UiCard class="text-center">
               <div class="mb-4 flex justify-center">
-                <div class="w-32 h-32 rounded-full bg-gradient-to-br from-primary-100 to-accent-100 p-1 shadow-md">
+                <div class="w-32 h-32 rounded-full bg-gradient-to-br from-primary-100 to-accent-100 shadow-md overflow-hidden">
                   <img
                     src="/images/team/adewale-adesina.jpg"
                     alt="Photo of Adewale Adesina, Director of Programmes at OFALD"
-                    class="w-full h-full rounded-full object-cover"
+                    class="w-full h-full object-cover"
                     loading="lazy"
                     onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
-                  />
+                  >
                   <div
-                    class="w-full h-full rounded-full bg-gradient-to-br from-primary-100 to-accent-100 items-center justify-center hidden"
+                    class="w-full h-full bg-gradient-to-br from-primary-100 to-accent-100 items-center justify-center hidden"
                     role="img"
                     aria-label="Photo of Adewale Adesina"
                   >
@@ -77,16 +77,16 @@
 
             <UiCard class="text-center">
               <div class="mb-4 flex justify-center">
-                <div class="w-32 h-32 rounded-full bg-gradient-to-br from-primary-100 to-accent-100 p-1 shadow-md">
+                <div class="w-32 h-32 rounded-full bg-gradient-to-br from-primary-100 to-accent-100 shadow-md overflow-hidden">
                   <img
                     src="/images/team/gloria-okpanachi.jpg"
                     alt="Photo of Gloria Okpanachi, Director of Education and Outreach at OFALD"
-                    class="w-full h-full rounded-full object-cover"
+                    class="w-full h-full object-cover"
                     loading="lazy"
                     onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
-                  />
+                  >
                   <div
-                    class="w-full h-full rounded-full bg-gradient-to-br from-primary-100 to-accent-100 items-center justify-center hidden"
+                    class="w-full h-full bg-gradient-to-br from-primary-100 to-accent-100 items-center justify-center hidden"
                     role="img"
                     aria-label="Photo of Gloria Okpanachi"
                   >
@@ -104,16 +104,16 @@
 
             <UiCard class="text-center">
               <div class="mb-4 flex justify-center">
-                <div class="w-32 h-32 rounded-full bg-gradient-to-br from-primary-100 to-accent-100 p-1 shadow-md">
+                <div class="w-32 h-32 rounded-full bg-gradient-to-br from-primary-100 to-accent-100 shadow-md overflow-hidden">
                   <img
                     src="/images/team/tosin-kolapo.jpg"
                     alt="Photo of Dr. Tosin Kolapo, Director of Health Outreach and Programmes at OFALD"
-                    class="w-full h-full rounded-full object-cover"
+                    class="w-full h-full object-cover"
                     loading="lazy"
                     onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
-                  />
+                  >
                   <div
-                    class="w-full h-full rounded-full bg-gradient-to-br from-primary-100 to-accent-100 items-center justify-center hidden"
+                    class="w-full h-full bg-gradient-to-br from-primary-100 to-accent-100 items-center justify-center hidden"
                     role="img"
                     aria-label="Photo of Dr. Tosin Kolapo"
                   >
