@@ -131,6 +131,14 @@ Modern, accessible Nuxt.js 3 website for Olubukola Foundation for Autism and Lea
 5. **Test build**: `pnpm build` before pushing
 6. **Commit**: Pre-commit hooks will validate automatically
 
+### Image Processing
+
+When working with images (logos, favicons, etc.):
+- Use macOS `sips` command for resizing: `sips -Z <size> input.png --out output.png`
+- Check dimensions first: `sips -g pixelWidth -g pixelHeight image.png`
+- Store originals in `assets/images/`, optimized versions in `public/images/`
+- See `README.md` "Image Processing" section for complete workflow and examples
+
 ## Important Notes
 
 - **Never disable pre-commit hooks** - they prevent broken code

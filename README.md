@@ -190,6 +190,119 @@ See `ACCESSIBILITY_IMPLEMENTATION.md` for complete details.
 - Sitemap available at `/sitemap.xml`
 - Robots.txt configured at `/robots.txt`
 
+## Image Processing
+
+This project uses macOS built-in tools for image processing and optimization. The workflow below documents the standard process for resizing images and generating favicons.
+
+### Prerequisites
+
+- macOS (for `sips` and `identify` commands)
+- ImageMagick (optional, for `identify` command) - Install with `brew install imagemagick`
+- Or use `sips` which is built into macOS
+
+### Checking Image Properties
+
+Before processing, check the image dimensions and format:
+
+```bash
+# Check file type and dimensions (macOS built-in)
+file path/to/image.png
+
+# Get detailed dimensions (macOS built-in)
+sips -g pixelWidth -g pixelHeight path/to/image.png
+
+# Alternative: Use ImageMagick identify (if installed)
+identify path/to/image.png
+```
+
+### Resizing Images
+
+Use `sips` (macOS built-in) to resize images while maintaining aspect ratio:
+
+```bash
+# Resize to specific height (width auto-adjusts to maintain aspect ratio)
+sips -Z 120 path/to/original.png --out path/to/resized.png
+
+# Resize to specific width (height auto-adjusts)
+sips -Z 200 path/to/original.png --out path/to/resized.png
+
+# Examples from logo processing:
+sips -Z 120 assets/images/original-logo.png --out public/images/logo-navbar.png
+sips -Z 80 assets/images/original-logo.png --out public/images/logo-footer.png
+```
+
+**Note**: The `-Z` flag resizes to fit within the specified dimension while maintaining aspect ratio.
+
+### Generating Favicons
+
+Create multiple favicon sizes for different devices:
+
+```bash
+# Create directory for favicons
+mkdir -p public/favicons
+
+# Generate standard favicon sizes
+sips -Z 16 assets/images/original-logo.png --out public/favicons/favicon-16x16.png
+sips -Z 32 assets/images/original-logo.png --out public/favicons/favicon-32x32.png
+sips -Z 48 assets/images/original-logo.png --out public/favicons/favicon-48x48.png
+
+# Generate Apple touch icon (180x180 for iOS)
+sips -Z 180 assets/images/original-logo.png --out public/favicons/apple-touch-icon.png
+
+# Copy one size as favicon.ico (browsers will use PNG if .ico not available)
+cp public/favicons/favicon-32x32.png public/favicon.ico
+```
+
+### Complete Workflow Example
+
+Here's the complete workflow used for processing the logo:
+
+```bash
+# 1. Check original image
+file assets/images/original-logo.png
+sips -g pixelWidth -g pixelHeight assets/images/original-logo.png
+
+# 2. Create output directories
+mkdir -p public/images public/favicons
+
+# 3. Generate optimized versions
+sips -Z 120 assets/images/original-logo.png --out public/images/logo-navbar.png
+sips -Z 80 assets/images/original-logo.png --out public/images/logo-footer.png
+
+# 4. Generate favicons
+sips -Z 16 assets/images/original-logo.png --out public/favicons/favicon-16x16.png
+sips -Z 32 assets/images/original-logo.png --out public/favicons/favicon-32x32.png
+sips -Z 48 assets/images/original-logo.png --out public/favicons/favicon-48x48.png
+sips -Z 180 assets/images/original-logo.png --out public/favicons/apple-touch-icon.png
+
+# 5. Create favicon.ico
+cp public/favicons/favicon-32x32.png public/favicon.ico
+```
+
+### Image Organization
+
+- **Original images**: Store in `assets/images/` (processed by Vite during build)
+- **Optimized/public images**: Store in `public/images/` (served as static assets)
+- **Favicons**: Store in `public/favicons/` and `public/` root
+
+### Best Practices
+
+1. **Always keep originals**: Never overwrite original images in `assets/images/`
+2. **Check dimensions first**: Verify image size before processing
+3. **Use appropriate sizes**: 
+   - Navbar logos: 100-150px height
+   - Footer logos: 60-100px height
+   - Favicons: 16x16, 32x32, 48x48, 180x180
+4. **Test after resizing**: Verify images display correctly in the browser
+5. **Optimize file size**: Consider using tools like `pngquant` or `imagemin` for further optimization if needed
+
+### Alternative Tools (Cross-platform)
+
+If not on macOS, consider:
+- **ImageMagick**: `convert input.png -resize 120x output.png`
+- **Sharp** (Node.js): Can be added as a dev dependency for automated processing
+- **Online tools**: Use services like Squoosh or TinyPNG for optimization
+
 ## Deployment
 
 The site can be deployed to any platform that supports Node.js:

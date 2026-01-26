@@ -16,6 +16,121 @@
           </p>
         </div>
 
+        <section class="mb-12" aria-labelledby="team-members-heading">
+          <h2 id="team-members-heading" class="text-3xl font-bold mb-6 text-accent">
+            Meet Our Team
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <UiCard class="text-center">
+              <div class="mb-4 flex justify-center">
+                <div class="w-32 h-32 rounded-full bg-gradient-to-br from-primary-100 to-accent-100 p-1 shadow-md">
+                  <img
+                    src="/images/team/adewumi-adeyemi.jpg"
+                    alt="Photo of Adewumi Adeyemi, Founder and Executive Director at OFALD"
+                    class="w-full h-full rounded-full object-cover"
+                    loading="lazy"
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                  />
+                  <div
+                    class="w-full h-full rounded-full bg-gradient-to-br from-primary-100 to-accent-100 items-center justify-center hidden"
+                    role="img"
+                    aria-label="Photo of Adewumi Adeyemi"
+                  >
+                    <span class="text-4xl text-primary font-heading" aria-hidden="true">AA</span>
+                  </div>
+                </div>
+              </div>
+              <h3 class="text-xl font-semibold mb-2 font-heading">
+                Adewumi Adeyemi
+              </h3>
+              <p class="text-gray-700 font-body text-base">
+                Founder and Executive Director at OFALD
+              </p>
+            </UiCard>
+
+            <UiCard class="text-center">
+              <div class="mb-4 flex justify-center">
+                <div class="w-32 h-32 rounded-full bg-gradient-to-br from-primary-100 to-accent-100 p-1 shadow-md">
+                  <img
+                    src="/images/team/adewale-adesina.jpg"
+                    alt="Photo of Adewale Adesina, Director of Programmes at OFALD"
+                    class="w-full h-full rounded-full object-cover"
+                    loading="lazy"
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                  />
+                  <div
+                    class="w-full h-full rounded-full bg-gradient-to-br from-primary-100 to-accent-100 items-center justify-center hidden"
+                    role="img"
+                    aria-label="Photo of Adewale Adesina"
+                  >
+                    <span class="text-4xl text-primary font-heading" aria-hidden="true">AA</span>
+                  </div>
+                </div>
+              </div>
+              <h3 class="text-xl font-semibold mb-2 font-heading">
+                Adewale Adesina
+              </h3>
+              <p class="text-gray-700 font-body text-base">
+                Director of Programmes at OFALD
+              </p>
+            </UiCard>
+
+            <UiCard class="text-center">
+              <div class="mb-4 flex justify-center">
+                <div class="w-32 h-32 rounded-full bg-gradient-to-br from-primary-100 to-accent-100 p-1 shadow-md">
+                  <img
+                    src="/images/team/gloria-okpanachi.jpg"
+                    alt="Photo of Gloria Okpanachi, Director of Education and Outreach at OFALD"
+                    class="w-full h-full rounded-full object-cover"
+                    loading="lazy"
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                  />
+                  <div
+                    class="w-full h-full rounded-full bg-gradient-to-br from-primary-100 to-accent-100 items-center justify-center hidden"
+                    role="img"
+                    aria-label="Photo of Gloria Okpanachi"
+                  >
+                    <span class="text-4xl text-primary font-heading" aria-hidden="true">GO</span>
+                  </div>
+                </div>
+              </div>
+              <h3 class="text-xl font-semibold mb-2 font-heading">
+                Gloria Okpanachi
+              </h3>
+              <p class="text-gray-700 font-body text-base">
+                Director of Education and Outreach at OFALD
+              </p>
+            </UiCard>
+
+            <UiCard class="text-center">
+              <div class="mb-4 flex justify-center">
+                <div class="w-32 h-32 rounded-full bg-gradient-to-br from-primary-100 to-accent-100 p-1 shadow-md">
+                  <img
+                    src="/images/team/tosin-kolapo.jpg"
+                    alt="Photo of Dr. Tosin Kolapo, Director of Health Outreach and Programmes at OFALD"
+                    class="w-full h-full rounded-full object-cover"
+                    loading="lazy"
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                  />
+                  <div
+                    class="w-full h-full rounded-full bg-gradient-to-br from-primary-100 to-accent-100 items-center justify-center hidden"
+                    role="img"
+                    aria-label="Photo of Dr. Tosin Kolapo"
+                  >
+                    <span class="text-4xl text-primary font-heading" aria-hidden="true">TK</span>
+                  </div>
+                </div>
+              </div>
+              <h3 class="text-xl font-semibold mb-2 font-heading">
+                Tosin Kolapo (Dr)
+              </h3>
+              <p class="text-gray-700 font-body text-base">
+                Director of Health Outreach and Programmes at OFALD
+              </p>
+            </UiCard>
+          </div>
+        </section>
+
         <section class="mb-12">
           <h2 class="text-3xl font-bold mb-6 text-accent">
             Our Commitment to Inclusion
