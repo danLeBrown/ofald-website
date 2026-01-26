@@ -69,8 +69,9 @@
 
 <script setup lang="ts">
 const route = useRoute()
-const { data: event } = await useAsyncData(`event-${route.params.slug}`, () =>
-  queryContent('/events').where({ _path: `/events/${route.params.slug}` }).findOne()
+const slug = Array.isArray(route.params.slug) ? route.params.slug.join('/') : route.params.slug
+const { data: event } = await useAsyncData(`event-${slug}`, () =>
+  queryContent('/events').where({ _path: `/events/${slug}` }).findOne()
 )
 
 const formatDate = (dateString: string | undefined) => {

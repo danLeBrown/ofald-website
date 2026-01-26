@@ -1,18 +1,15 @@
 <template>
   <nav aria-label="Breadcrumb" class="mb-6">
-    <ol class="flex flex-wrap items-center gap-2 font-body text-base">
-      <li class="flex items-center">
+    <ol class="flex items-baseline flex-wrap gap-2 font-body text-base">
+      <li class="flex items-baseline">
         <NuxtLink to="/" class="text-accent hover:underline focus:outline-none focus:ring-3 focus:ring-accent">
           Home
         </NuxtLink>
       </li>
-      <li v-for="(crumb, index) in crumbs" :key="index" class="flex items-center">
+      <li v-for="(crumb, index) in crumbs" :key="index" class="flex items-baseline">
         <span class="mx-2 text-gray-600" aria-hidden="true">/</span>
-        <NuxtLink
-          v-if="index < crumbs.length - 1"
-          :to="crumb.path"
-          class="text-accent hover:underline focus:outline-none focus:ring-3 focus:ring-accent"
-        >
+        <NuxtLink v-if="index < crumbs.length - 1" :to="crumb.path"
+          class="text-accent hover:underline focus:outline-none focus:ring-3 focus:ring-accent">
           {{ crumb.label }}
         </NuxtLink>
         <span v-else class="text-gray-900 font-semibold" aria-current="page">
