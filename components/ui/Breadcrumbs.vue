@@ -1,7 +1,7 @@
 <template>
   <nav aria-label="Breadcrumb" class="mb-6">
     <ol class="flex flex-wrap items-center gap-2 font-body text-base">
-      <li>
+      <li class="flex items-center">
         <NuxtLink to="/" class="text-accent hover:underline focus:outline-none focus:ring-3 focus:ring-accent">
           Home
         </NuxtLink>
