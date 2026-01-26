@@ -44,7 +44,10 @@
               Contact us to register or get more information about this event.
             </p>
             <div class="flex flex-col sm:flex-row gap-4">
-              <NuxtLink to="/contact">
+              <NuxtLink v-if="event.link" :to="event.link">
+                <UiButton>Register Now</UiButton>
+              </NuxtLink>
+              <NuxtLink v-else to="/contact">
                 <UiButton>Contact Us</UiButton>
               </NuxtLink>
               <a href="tel:+2347031149191">

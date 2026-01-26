@@ -6,6 +6,7 @@ location: 'Online Webinar'
 description: 'An insightful webinar hosted by the Olubukola Foundation for Autism and Learning Disability, focused on breaking barriers and fostering inclusion across Nigeria.'
 image: '/images/events/understanding-autism-webinar.jpg'
 category: 'Webinar'
+link: 'https://forms.gle/uRagQigSkQptbja69'
 ---
 
 ## About This Event
