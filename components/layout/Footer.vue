@@ -57,42 +57,82 @@
             <li>Email: <a href="mailto:info@ofald.net" class="hover:text-white transition-colors">info@ofald.net</a></li>
             <li>Lagos, Ibadan, Osogbo, Abuja, Nigeria</li>
           </ul>
-          <div class="flex space-x-4 mt-4">
-            <a
-              href="https://www.facebook.com/OFALD.NGO"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Facebook"
-              class="text-gray-300 hover:text-white focus:outline-none focus:ring-3 focus:ring-accent w-11 h-11 flex items-center justify-center"
-            >
-              <FontAwesomeIcon :icon="['fab', 'facebook']" class="w-6 h-6" />
-            </a>
-            <a
-              href="https://www.instagram.com/OFALD.NGO"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Instagram"
-              class="text-gray-300 hover:text-white focus:outline-none focus:ring-3 focus:ring-accent w-11 h-11 flex items-center justify-center"
-            >
-              <FontAwesomeIcon :icon="['fab', 'instagram']" class="w-6 h-6" />
-            </a>
-            <a
-              href="mailto:info@ofald.net"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Email"
-              class="text-gray-300 hover:text-white focus:outline-none focus:ring-3 focus:ring-accent w-11 h-11 flex items-center justify-center"
-            >
-              <FontAwesomeIcon :icon="['fas', 'envelope']" class="w-6 h-6" />
-            </a>
-            <a
-              href="tel:+2347031149191"
-              aria-label="Phone"
-              class="text-gray-300 hover:text-white focus:outline-none focus:ring-3 focus:ring-accent w-11 h-11 flex items-center justify-center"
-            >
-              <FontAwesomeIcon :icon="['fas', 'phone']" class="w-6 h-6" />
-            </a>
-          </div>
+          <ClientOnly>
+            <div class="flex space-x-4 mt-4">
+              <a
+                href="https://www.facebook.com/OFALD.NGO"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                class="text-gray-300 hover:text-white focus:outline-none focus:ring-3 focus:ring-accent w-11 h-11 flex items-center justify-center"
+              >
+                <FontAwesomeIcon :icon="['fab', 'facebook']" class="w-6 h-6" />
+              </a>
+              <a
+                href="https://www.instagram.com/OFALD.NGO"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                class="text-gray-300 hover:text-white focus:outline-none focus:ring-3 focus:ring-accent w-11 h-11 flex items-center justify-center"
+              >
+                <FontAwesomeIcon :icon="['fab', 'instagram']" class="w-6 h-6" />
+              </a>
+              <a
+                href="mailto:info@ofald.net"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Email"
+                class="text-gray-300 hover:text-white focus:outline-none focus:ring-3 focus:ring-accent w-11 h-11 flex items-center justify-center"
+              >
+                <FontAwesomeIcon :icon="['fas', 'envelope']" class="w-6 h-6" />
+              </a>
+              <a
+                href="tel:+2347031149191"
+                aria-label="Phone"
+                class="text-gray-300 hover:text-white focus:outline-none focus:ring-3 focus:ring-accent w-11 h-11 flex items-center justify-center"
+              >
+                <FontAwesomeIcon :icon="['fas', 'phone']" class="w-6 h-6" />
+              </a>
+            </div>
+            <template #fallback>
+              <div class="flex space-x-4 mt-4">
+                <a
+                  href="https://www.facebook.com/OFALD.NGO"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook"
+                  class="text-gray-300 hover:text-white focus:outline-none focus:ring-3 focus:ring-accent w-11 h-11 flex items-center justify-center"
+                >
+                  <span class="w-6 h-6" aria-hidden="true">f</span>
+                </a>
+                <a
+                  href="https://www.instagram.com/OFALD.NGO"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                  class="text-gray-300 hover:text-white focus:outline-none focus:ring-3 focus:ring-accent w-11 h-11 flex items-center justify-center"
+                >
+                  <span class="w-6 h-6" aria-hidden="true">📷</span>
+                </a>
+                <a
+                  href="mailto:info@ofald.net"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Email"
+                  class="text-gray-300 hover:text-white focus:outline-none focus:ring-3 focus:ring-accent w-11 h-11 flex items-center justify-center"
+                >
+                  <span class="w-6 h-6" aria-hidden="true">✉</span>
+                </a>
+                <a
+                  href="tel:+2347031149191"
+                  aria-label="Phone"
+                  class="text-gray-300 hover:text-white focus:outline-none focus:ring-3 focus:ring-accent w-11 h-11 flex items-center justify-center"
+                >
+                  <span class="w-6 h-6" aria-hidden="true">📞</span>
+                </a>
+              </div>
+            </template>
+          </ClientOnly>
         </div>
       </div>
 
