@@ -92,8 +92,24 @@ const props = withDefaults(defineProps<Props>(), {
 })
 
 const isOpen = ref(false)
-const buttonId = `dropdown-button-${Math.random().toString(36).substr(2, 9)}`
-const menuId = `dropdown-menu-${Math.random().toString(36).substr(2, 9)}`
+
+// Generate stable IDs based on label to avoid hydration mismatches
+// This ensures the same label always generates the same ID on both server and client
+const generateStableId = (prefix: string, label: string): string => {
+  // Simple hash function to convert label to stable ID
+  let hash = 0
+  for (let i = 0; i < label.length; i++) {
+    const char = label.charCodeAt(i)
+    hash = ((hash << 5) - hash) + char
+    hash = hash & hash // Convert to 32-bit integer
+  }
+  // Convert to positive number and base36 string
+  const id = Math.abs(hash).toString(36).substring(0, 9)
+  return `${prefix}-${id}`
+}
+
+const buttonId = generateStableId('dropdown-button', props.label)
+const menuId = generateStableId('dropdown-menu', props.label)
 
 const toggleDropdown = () => {
   isOpen.value = !isOpen.value
