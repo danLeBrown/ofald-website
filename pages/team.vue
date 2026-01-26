@@ -8,11 +8,15 @@
         </h1>
 
         <div class="mb-8">
-          <p class="text-base text-gray-900 mb-6 font-body max-w-readable">
+          <!-- <p class="text-base text-gray-900 mb-6 font-body max-w-readable">
             At OFALD, we are proud of our diverse and dedicated team. Our staff includes
             professionals from various fields, and importantly, many of our team members have
             learning disabilities themselves. This is a core part of our mission to foster
             inclusion and demonstrate that people with disabilities can thrive in the workplace.
+          </p> -->
+          <p class="text-base text-gray-900 mb-6 font-body max-w-readable">
+            At OFALD, we are proud of our diverse and dedicated team. Our staff includes
+            professionals from various fields.
           </p>
         </div>
 
@@ -131,7 +135,7 @@
           </div>
         </section>
 
-        <section class="mb-12">
+        <!-- <section class="mb-12">
           <h2 class="text-3xl font-bold mb-6 text-accent">
             Our Commitment to Inclusion
           </h2>
@@ -145,7 +149,7 @@
             <li>Provide role models for young people with disabilities</li>
             <li>Demonstrate that people with disabilities can have successful careers</li>
           </ul>
-        </section>
+        </section> -->
 
         <section class="mb-12">
           <h2 class="text-3xl font-bold mb-6 text-accent">
