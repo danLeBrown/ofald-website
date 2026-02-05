@@ -86,7 +86,7 @@
           <ul class="list-disc list-inside space-y-3 text-gray-900 font-body text-base max-w-readable">
             <li>
               Young people with learning disabilities (Down syndrome, Cerebral Palsy, Angelman
-              Syndrome, Tourette's Syndrome, Epilepsy and others) between the ages of 14 and 21.
+              Syndrome, Tourette's Syndrome and others) between the ages of 14 and 21.
             </li>
             <li>Parents of young people with autism and learning disabilities.</li>
             <li>Young people with autism between the ages of 14 and 21.</li>
@@ -233,7 +233,7 @@
             </p>
             <p class="text-gray-900 font-body text-base">
               Due to limited research in this regard, especially in Africa, people with learning
-              disabilities, epilepsy, and autism in Nigeria generally have low life expectancy. At
+              disabilities, and autism in Nigeria generally have low life expectancy. At
               OFALD, we are looking to change this through extensive scientific and social
               research.
             </p>

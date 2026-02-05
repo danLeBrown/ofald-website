@@ -1,7 +1,7 @@
 <template>
   <div class="py-12">
     <div class="container mx-auto px-4">
-      <div class="max-w-readable mx-auto">
+      <div class="max-w-6xl mx-auto">
         <UiBreadcrumbs />
         <h1 class="text-4xl font-bold mb-8 text-accent">
           OFALD Team
@@ -24,7 +24,7 @@
           <h2 id="team-members-heading" class="text-3xl font-bold mb-6 text-accent">
             Meet Our Team
           </h2>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <UiCard class="text-center">
               <div class="mb-4 flex justify-center">
                 <div class="w-32 h-32 rounded-full bg-gradient-to-br from-primary-100 to-accent-100 shadow-md overflow-hidden">
@@ -130,6 +130,33 @@
               </h3>
               <p class="text-gray-700 font-body text-base">
                 Director of Health Outreach and Programmes at OFALD
+              </p>
+            </UiCard>
+
+            <UiCard class="text-center">
+              <div class="mb-4 flex justify-center">
+                <div class="w-32 h-32 rounded-full bg-gradient-to-br from-primary-100 to-accent-100 shadow-md overflow-hidden">
+                  <img
+                    src="/images/team/ayomide-ojo.jpg"
+                    alt="Photo of Ayomide Ojo, Director of ICT at OFALD"
+                    class="w-full h-full object-cover"
+                    loading="lazy"
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                  >
+                  <div
+                    class="w-full h-full rounded-full bg-gradient-to-br from-primary-100 to-accent-100 items-center justify-center hidden"
+                    role="img"
+                    aria-label="Photo of Ayomide Ojo"
+                  >
+                    <span class="text-4xl text-primary font-heading" aria-hidden="true">AO</span>
+                  </div>
+                </div>
+              </div>
+              <h3 class="text-xl font-semibold mb-2 font-heading">
+                Ayomide Ojo
+              </h3>
+              <p class="text-gray-700 font-body text-base">
+                Director of ICT at OFALD
               </p>
             </UiCard>
           </div>

@@ -59,41 +59,48 @@
           <h2 class="text-3xl font-bold mb-6 text-accent">
             Types of Learning Disabilities
           </h2>
+          <p class="text-gray-900 font-body text-base mb-6 max-w-readable">
+            Learning disabilities are usually measured and classified based on their severity.
+          </p>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <UiCard>
               <h3 class="text-xl font-semibold mb-3">
-                Down Syndrome
+                Mild Learning disability
               </h3>
               <p class="text-gray-900 font-body text-base">
-                A genetic condition caused by an extra chromosome 21, leading to developmental
-                delays and intellectual disability.
+                People may achieve good independence with some support. Many can learn basic
+                literacy and numeracy, hold supported or open employment, and manage daily life
+                with guidance from family or services.
               </p>
             </UiCard>
             <UiCard>
               <h3 class="text-xl font-semibold mb-3">
-                Cerebral Palsy
+                Moderate Learning disability
               </h3>
               <p class="text-gray-900 font-body text-base">
-                A group of disorders affecting movement, muscle tone, and posture, often caused by
-                brain damage before or during birth.
+                More support is needed for daily living, communication, and learning. With the
+                right help, people can learn practical and self-care skills and may take part in
+                supported work or day activities.
               </p>
             </UiCard>
             <UiCard>
               <h3 class="text-xl font-semibold mb-3">
-                Epilepsy
+                Severe learning disability
               </h3>
               <p class="text-gray-900 font-body text-base">
-                A neurological disorder characterized by recurrent seizures, which can affect
-                learning and development.
+                Significant support is needed across most areas of life. Communication is often
+                limited or non-verbal. People can still learn routines and preferences with
+                consistent, person-centred support.
               </p>
             </UiCard>
             <UiCard>
               <h3 class="text-xl font-semibold mb-3">
-                Other Conditions
+                Profound and multiple learning disability
               </h3>
               <p class="text-gray-900 font-body text-base">
-                Including Angelman Syndrome, Tourette's Syndrome, and other developmental
-                conditions.
+                Very high support needs, often with additional physical or sensory impairments.
+                Full-time care is typically required. Support focuses on comfort, communication,
+                and quality of life in line with the person’s needs and preferences.
               </p>
             </UiCard>
           </div>
